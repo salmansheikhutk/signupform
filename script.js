@@ -1,6 +1,7 @@
 document.getElementById("click").addEventListener('click', function() {
-    document.getElementById("myform").submit();
-  });
+    document.getElementById("myform").reportValidity() && document.getElementById("myform").submit();
+});
+
 
   // if id: user_password and confirm do not match, then display error message
     // Path: script.js
