@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Logo';
+    src: url('./images/Norse-Bold.otf')
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display:flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.leaves {
+    height: 100%;
+    width: 100%;
+}
+
+.leftpage {
+    background-image: url('./images/leaves.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width:400px;
+}
+
+.banner img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.banner p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    font-size: 50px;
+    font-family: "logo";
+}
+
+.photocredits {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.rightpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightpage > div {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#message, #form p {
+    font-weight: bold;
+}
+
+#form {
+    /* border: 1px solid grey; Grey border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    height: 240px;
+}
+
+#message, #footer {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+}
+
+#footer {
+    height: 120px
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    gap: 9px;
+    font-family: Georgia;
+    font-size:medium;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+#row-2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#click {
+    color: white;
+    background-color: darkgreen;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Border shadow */
+    cursor: pointer;
+}
+
+#footer p a {
+    text-decoration: none;
+    color: darkgreen
+}
+
+.photocredits p a {
+    color: white;
+}
+
+input {
+    /* Make the input box round around edges and light white border color */
+    border-radius: 3px;
+    border: 1px solid grey;
+
+    /* Make the input box a little bigger */
+    padding: 3px;
+}
+
+input: focus {
+    border: 1px solid;
+}

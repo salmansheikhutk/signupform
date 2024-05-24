@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "leftpage">
+
+        <!-- There is another image that will be in the middle of the page. It will have some text to the left. -->
+        <div class = "banner">
+            <img src="./images/odin-lined.png">
+            <p>ODIN</p>
+        </div>
+        <!-- Image has a footer element -->
+        <div class = "photocredits">
+            <p>Image by <a href="https://unsplash.com/">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+    </div>
+    <div class = "rightpage">
+        <div id = "message">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+            <!-- A new line -->
+            <br>
+            <!-- Make text italic inside the p, just one word -->
+
+            <p>You <i>know</i> you want to.</p>
+        </div>
+        <div id = "form">
+            <p>Let's do this!</p>
+            <!-- The form goes here. First name, last name, email, phone number, password and confirm password -->
+            <form id="myform" action="#" method="post">
+                <div class = "row">
+                    <div class = "labels">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" placeholder="First Name">
+                    </div>
+                    <div class = "labels">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class = "row" id = "row-2">
+                    <div class = "labels">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class = "labels">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" placeholder="xxx-xxxx">
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "labels" id= "password">
+                        <label for="user_password">Password:</label>
+                        <input type="password" id="user_password" required>
+                    </div>
+                    <div class = "labels">
+                        <label for="confirm">Confirm Password:</label>
+                        <input type="password" id="confirm" required>
+                    </div>
+                </div>
+
+            </form>
+                <!--  add a title text also right above the button. Each button has it's own title e.g. First Name etc -->
+                
+        </div>
+        <div id = "footer">
+            <!--  Make a button, a text, and a login button -->
+            <button id="click" type="button">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</body>
+    <script src="./script.js"></script>
+</html>
